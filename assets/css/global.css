@@ -1,5 +1,110 @@
 * {
-    color: white;
-    background-color: black;
     font-family: 'Roboto', sans-serif;
+      
+}
+body{
+    background: url(../imagens/fundo) no-repeat center/cover;
+}
+.conteiner{
+    padding: 1rem;
+}
+.conteiner h1{
+    margin: 0;
+}
+.conteiner img{
+    width: 5rem;
+}
+li h2{    
+    padding: .1rem;
+    background-color: rgba(10,11,12, .7);
+    border-radius: .1rem .1rem .2rem .2rem;
+    text-transform: uppercase;
+    font-size: x-small;
+    font-weight: bold;
+    text-align: center;
+}
+ol.conteiner_personagens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+ol .personagem{
+    margin: 1.5rem;
+    padding: .5rem;
+    background: linear-gradient(to bottom, rgba(10,11,12, .7), rgba(6, 18, 52, .7), rgba(23,41,99, .7));
+    border-radius: .5rem ;
+    height: 170px;
+    color: aliceblue;
+   
+}
+ol .personagem_img{  
+       
+    border-radius: .5rem .5rem .1rem .1rem;
+    height: 50%;    
+}   
+ol .img-1{
+    background: url(../imagens/Billy.webp) no-repeat top center/100%;  
+}
+ol .img-2{
+    background: url(../imagens/Hugh.webp) no-repeat top center/100%;  
+}ol .img-3{
+    background: url(../imagens/Francês.webp) no-repeat top center/100%;  
+}ol .img-4{
+    background: url(../imagens/Leitinho\ de\ Mãe.webp) no-repeat top center/100%;  
+}ol .img-5{
+    background: url(../imagens/Kimiko.webp) no-repeat top center/100%;  
+}ol .img-6{
+    background: url(../imagens/Luz-Estrela.webp) no-repeat top center/100%;  
+}ol .img-7{
+    background: url(../imagens/Capitão\ Pátria.webp) no-repeat top center/100%;  
+}ol .img-8{
+    background: url(../imagens/Rainha\ Maeve.webp) no-repeat top center/100%;  
+}ol .img-9{
+    background: url(../imagens/Trem-Bala.webp) no-repeat top center/cover;  
+}ol .img-10{
+    background: url(../imagens/Profundo.webp) no-repeat top center/cover;  
+}ol .img-11{
+    background: url(../imagens/Black\ Noir.webp) no-repeat top center/cover;  
+}ol .img-12{
+    background: url(../imagens/Tempesta.webp) no-repeat top center/cover;  
+}
+ol li.personagem_fundo-1{
+    background: url(../imagens/fundo-1.avif) no-repeat center/cover;
+}
+ol li.personagem_fundo-2{
+    background: url(../imagens/fundo-2.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-3{
+    background: url(../imagens/fundo-3.jpeg) no-repeat center/cover;
+}
+ol li.personagem_fundo-4{
+    background: url(../imagens/fundo-4.avif) no-repeat center/cover;
+}
+ol li.personagem_fundo-5{
+    background: url(../imagens/fundo-5.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-6{
+    background: url(../imagens/fundo-6.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-7{
+    background: url(../imagens/fundo-7.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-8{
+    background: url(../imagens/fundo-8.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-9{
+    background: url(../imagens/fund-9.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-10{
+    background: url(../imagens/fundo-10.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-11{
+    background: url(../imagens/fundo-11.jpg) no-repeat center/cover;
+}
+ol li.personagem_fundo-12{
+    background: url(../imagens/fundo-12.avif) no-repeat center/cover;
 }
