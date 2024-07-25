@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
       
 }
 body{
@@ -17,7 +18,7 @@ body{
 li h2{    
     padding: .1rem;
     background-color: rgba(10,11,12, .7);
-    border-radius: .1rem .1rem .2rem .2rem;
+    border-radius: .1rem;
     text-transform: uppercase;
     font-size: x-small;
     font-weight: bold;
@@ -33,11 +34,11 @@ ol.conteiner_personagens {
 
 }
 ol .personagem{
-    margin: 1.5rem;
+    margin: .5rem;
     padding: .5rem;
     background: linear-gradient(to bottom, rgba(10,11,12, .7), rgba(6, 18, 52, .7), rgba(23,41,99, .7));
     border-radius: .5rem ;
-    height: 170px;
+    height: 15rem;
     color: aliceblue;
    
 }
@@ -107,4 +108,48 @@ ol li.personagem_fundo-11{
 }
 ol li.personagem_fundo-12{
     background: url(../imagens/fundo-12.avif) no-repeat center/cover;
+}
+ li .personagem-texto{
+    width: 100%;
+    height: 5rem;
+    background: rgba(226, 148, 12, 0.2);
+    border-radius: .1rem .1rem .5rem .5rem;  
+    overflow-y: scroll;   
+    }
+.texto{
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 14px;
+    text-wrap: wrap;            
+}
+.personagem-texto::-webkit-scrollbar{
+    width: 5px;
+    
+    background: #bb2222; /* Cor do polegar da barra de rolagem */
+    border-radius:  .1rem .1rem .5rem .1rem; /* Bordas arredondadas no polegar */
+}
+.personagem-texto::-webkit-scrollbar-thumb{
+    background: #f1f1f1;
+    border-radius: .5rem;
+}
+
+/**/
+@media screen and (min-width: 665px) {
+    body {
+        max-width: 665px;
+        max-height: 375px;            
+        margin: 0 auto;
+        background: url(../imagens/fundo) no-repeat center/560vh;
+    }
+
+    ol .personagem{
+        height: 280px;        
+    }
+    .conteiner  img{
+        width: 120px;
+    }    
+    li .personagem-texto{
+        height: 6.5rem;
+    }
+
 }
