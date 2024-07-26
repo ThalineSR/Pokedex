@@ -4,6 +4,7 @@
       
 }
 body{
+  
     background: url(../imagens/fundo) no-repeat center/cover;
 }
 .conteiner{
@@ -11,9 +12,10 @@ body{
 }
 .conteiner h1{
     margin: 0;
+    
 }
 .conteiner img{
-    width: 5rem;
+    width: 8rem;
 }
 li h2{    
     padding: .1rem;
@@ -31,39 +33,46 @@ ol.conteiner_personagens {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+    align-items: center;  
+    gap: 2rem;
 
 }
 ol .personagem{
-    margin: .5rem;
-    padding: .5rem;
+  
     background: linear-gradient(to bottom, rgba(10,11,12, .7), rgba(6, 18, 52, .7), rgba(23,41,99, .7));
     border-radius: .5rem ;
     height: 15rem;
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
    
 }
 ol .personagem_img{  
        
     border-radius: .5rem .5rem .1rem .1rem;
-    height: 50%;    
+    height: 50%; 
+    background-size: cover;
+   
 }   
 ol .img-1{
-    background: url(../imagens/Billy.webp) no-repeat top center/100%;  
+    background: url(../imagens/Billy.webp) no-repeat top center/cover;  
 }
 ol .img-2{
-    background: url(../imagens/Hugh.webp) no-repeat top center/100%;  
+    background: url(../imagens/Hugh.webp) no-repeat top center/cover;  
 }ol .img-3{
-    background: url(../imagens/Francês.webp) no-repeat top center/100%;  
+    background: url(../imagens/Francês.webp) no-repeat top center/cover;  
 }ol .img-4{
-    background: url(../imagens/Leitinho\ de\ Mãe.webp) no-repeat top center/100%;  
+    background: url(../imagens/Leitinho\ de\ Mãe.webp) no-repeat top center/cover;  
 }ol .img-5{
-    background: url(../imagens/Kimiko.webp) no-repeat top center/100%;  
+    background: url(../imagens/Kimiko.webp) no-repeat top center/cover;  
 }ol .img-6{
-    background: url(../imagens/Luz-Estrela.webp) no-repeat top center/100%;  
+    background: url(../imagens/Luz-Estrela.webp) no-repeat top center/cover;  
 }ol .img-7{
-    background: url(../imagens/Capitão\ Pátria.webp) no-repeat top center/100%;  
+    background: url(../imagens/Capitão\ Pátria.webp) no-repeat top center/cover;  
 }ol .img-8{
-    background: url(../imagens/Rainha\ Maeve.webp) no-repeat top center/100%;  
+    background: url(../imagens/Rainha\ Maeve.webp) no-repeat top center/cover;  
 }ol .img-9{
     background: url(../imagens/Trem-Bala.webp) no-repeat top center/cover;  
 }ol .img-10{
@@ -115,18 +124,18 @@ ol li.personagem_fundo-12{
     background: rgba(226, 148, 12, 0.2);
     border-radius: .1rem .1rem .5rem .5rem;  
     overflow-y: scroll;   
-    }
+}
 .texto{
     margin: .5rem;
     padding: .5rem;
-    font-size: 14px;
+    font-size: large;
     text-wrap: wrap;            
 }
 .personagem-texto::-webkit-scrollbar{
     width: 5px;
     
-    background: #bb2222; /* Cor do polegar da barra de rolagem */
-    border-radius:  .1rem .1rem .5rem .1rem; /* Bordas arredondadas no polegar */
+    background: #bb2222; 
+    border-radius:  .1rem .1rem .5rem .1rem; 
 }
 .personagem-texto::-webkit-scrollbar-thumb{
     background: #f1f1f1;
@@ -136,20 +145,41 @@ ol li.personagem_fundo-12{
 /**/
 @media screen and (min-width: 665px) {
     body {
-        max-width: 665px;
-        max-height: 375px;            
+        max-width: 665px;                    
         margin: 0 auto;
-        background: url(../imagens/fundo) no-repeat center/560vh;
+        background: url(../imagens/fundo) no-repeat center center/cover;         
+      
     }
 
+    .conteiner {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    ol.conteiner_personagens {
+        
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        gap: 2rem;   
+        justify-items: center;
+        align-items: center;
+    }
+    .conteiner img{
+        align-self: flex-start;
+        width: 15rem;
+        padding: 1rem;
+    }
     ol .personagem{
-        height: 280px;        
+        height: 20rem;
     }
-    .conteiner  img{
-        width: 120px;
-    }    
     li .personagem-texto{
-        height: 6.5rem;
+        width: 100%;
+        height: 7.5rem;
     }
-
 }
